@@ -34,6 +34,9 @@ Naming/MethodParameterName:
 RSpec/ExampleLength:
   Max: 16
 
+RSpec/FilePath:
+  Enabled: false
+
 RSpec/MultipleMemoizedHelpers:
   Max: 16
 
