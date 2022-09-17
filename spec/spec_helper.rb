@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'numo/linalg/autoloader'
 require 'numo/linalg/randsvd'
 
 RSpec.configure do |config|
