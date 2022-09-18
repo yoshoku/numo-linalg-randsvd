@@ -1,8 +1,11 @@
-# Numo::Linalg::Randsvd
+# Numo::Linalg.rand_svd
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/numo/linalg/randsvd`. To experiment with that code, run `bin/console` for an interactive prompt.
+Numo::Linalg.rand_svd is a module function on Numo::Linalg for truncated singular value decomposition with randomized algorithm.
 
-TODO: Delete this and the text above, and describe your gem
+References:
+
+- P.-G. Martinsson, A. Szlam, M. Tygert, "Normalized power iterations for the computation of SVD," Proc. of NIPS Workshop on Low-Rank Methods for Large-Scale Machine Learning, 2011.
+- P.-G. Martinsson, V. Rokhlin, M. Tygert, "A randomized algorithm for the approximation of matrices," Tech. Rep., 1361, Yale University Department of Computer Science, 2006.
 
 ## Installation
 

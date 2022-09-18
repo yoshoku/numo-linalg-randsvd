@@ -8,8 +8,14 @@ Gem::Specification.new do |spec|
   spec.authors = ['yoshoku']
   spec.email = ['yoshoku@outlook.com']
 
-  spec.summary = 'Write a short summary, because RubyGems requires one.'
-  spec.description = 'Write a longer description or delete this line.'
+  spec.summary = <<~MSG
+    Numo::Linalg.rand_svd is a module function on Numo::Linalg for
+    truncated singular value decomposition with randomized algorithm.
+  MSG
+  spec.description = <<~MSG
+    Numo::Linalg.rand_svd is a module function on Numo::Linalg for
+    truncated singular value decomposition with randomized algorithm.
+  MSG
   spec.homepage = 'https://github.com/yoshoku/numo-linalg-randsvd'
   spec.license = 'BSD-3-Clause'
   spec.required_ruby_version = '>= 2.6.0'
