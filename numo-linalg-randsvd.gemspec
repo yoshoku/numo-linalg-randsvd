@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'lib/numo/linalg/randsvd/version'
-
 Gem::Specification.new do |spec|
   spec.name = 'numo-linalg-randsvd'
-  spec.version = Numo::Linalg::Randsvd::VERSION
+  spec.version = '0.1.0'
   spec.authors = ['yoshoku']
   spec.email = ['yoshoku@outlook.com']
 
