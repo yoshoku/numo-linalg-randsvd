@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
   MSG
   spec.homepage = 'https://github.com/yoshoku/numo-linalg-randsvd'
   spec.license = 'BSD-3-Clause'
-  spec.required_ruby_version = '>= 2.6.0'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
@@ -34,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'numo-linalg', '>= 0.1.4'
   spec.add_dependency 'numo-narray', '>= 0.9.1'
 
   # For more information and examples about making a new gem, checkout our
