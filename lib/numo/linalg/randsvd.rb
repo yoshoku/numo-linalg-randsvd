@@ -2,6 +2,7 @@
 
 require 'numo/narray'
 
+# Ruby/Numo (NUmerical MOdules)
 module Numo
   # Numo::Linalg : Linear Algebra library with BLAS/LAPACK binding to Numo::NArray
   module Linalg
