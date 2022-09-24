@@ -25,7 +25,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'numo/linalg/autoloader'
+require 'numo/linalg/randsvd'
+
+x = Numo::DFloat.new(100, 50).rand
+y = Numo::DFloat.new(20, 50).rand
+z = x.dot(y)
+
+p z
+# Numo::DFloat#shape=[100,50]
+# ...
+
+n_singular_values = 20
+s, u, vt = Numo::Linalg.rand_svd(z, n_singular_values)
+
+p s
+# Numo::DFloat#shape=[20]
+# ...
+
+p u
+# Numo::DFloat#shape=[100,20]
+# ...
+
+p vt
+# Numo::DFloat#shape=[20,50]
+# ...
+
+zz = u.dot(s.diag).dot(vt)
+p zz
+# Numo::DFloat#shape=[100,50]
+# ...
+
+p (z - zz).abs.max
+# 5.5067062021407764e-14
+```
 
 ## Contributing
 
