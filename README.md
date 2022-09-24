@@ -1,6 +1,8 @@
 # Numo::Linalg.rand_svd
 
 Numo::Linalg.rand_svd is a module function on Numo::Linalg for truncated singular value decomposition with randomized algorithm.
+This gem re-implements [RandSVD](https://github.com/yoshoku/randsvd) using [Numo::NArray](https://github.com/ruby-numo/numo-narray) and
+[Numo::Linalg](https://github.com/ruby-numo/numo-linalg) instead of [NMatrix](https://github.com/SciRuby/nmatrix).
 
 References:
 
