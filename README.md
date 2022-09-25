@@ -31,34 +31,32 @@ Or install it yourself as:
 require 'numo/linalg/autoloader'
 require 'numo/linalg/randsvd'
 
-x = Numo::DFloat.new(100, 50).rand
+# An example of matrix decomposition is as follows:
+x = Numo::DFloat.new(100, 20).rand
 y = Numo::DFloat.new(20, 50).rand
 z = x.dot(y)
-
 p z
 # Numo::DFloat#shape=[100,50]
 # ...
 
+# Performing the randomized singular value decomposition with specified the number of singular values.
 n_singular_values = 20
 s, u, vt = Numo::Linalg.rand_svd(z, n_singular_values)
-
 p s
 # Numo::DFloat#shape=[20]
 # ...
-
 p u
 # Numo::DFloat#shape=[100,20]
 # ...
-
 p vt
 # Numo::DFloat#shape=[20,50]
 # ...
 
+# Reconstructing the matrix with the singular values and singular vectors.
 zz = u.dot(s.diag).dot(vt)
 p zz
 # Numo::DFloat#shape=[100,50]
 # ...
-
 p (z - zz).abs.max
 # 5.5067062021407764e-14
 ```
