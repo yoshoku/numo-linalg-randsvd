@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.email = ['yoshoku@outlook.com']
 
   spec.summary = <<~MSG
-    Numo::Linalg.rand_svd is a module function on Numo::Linalg for
+    Numo::Linalg.randsvd is a module function on Numo::Linalg for
     truncated singular value decomposition with randomized algorithm.
   MSG
   spec.description = <<~MSG
-    Numo::Linalg.rand_svd is a module function on Numo::Linalg for
+    Numo::Linalg.randsvd is a module function on Numo::Linalg for
     truncated singular value decomposition with randomized algorithm.
   MSG
   spec.homepage = 'https://github.com/yoshoku/numo-linalg-randsvd'

@@ -15,7 +15,7 @@ module Numo
     # @param t [Integer] The number of iterations for orthogonalization.
     # @param driver [String] The driver parameter of Numo::Linalg.svd.
     # @param job [String] The job parameter of Numo::Linalg.svd.
-    def rand_svd(a, k, t = 0, driver: 'svd', job: 'A')
+    def randsvd(a, k, t = 0, driver: 'svd', job: 'A')
       n = a.shape[1]
       q = _orthonormal_mat(a, [k + 10, n].min, t)
       b = a.dot(q)
