@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/yoshoku/numo-linalg-randsvd/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/yoshoku/numo-linalg-randsvd/actions/workflows/main.yml)
 [![Gem Version](https://badge.fury.io/rb/numo-linalg-randsvd.svg)](https://badge.fury.io/rb/numo-linalg-randsvd)
 [![BSD 3-Clause License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://github.com/yoshoku/numo-linalg-randsvd/blob/main/LICENSE.txt)
+[![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://yoshoku.github.io/numo-linalg-randsvd/doc/)
 
 Numo::Linalg.randsvd is a module function on Numo::Linalg for truncated singular value decomposition with randomized algorithm.
 This gem re-implements [RandSVD](https://github.com/yoshoku/randsvd) using [Numo::NArray](https://github.com/ruby-numo/numo-narray) and
