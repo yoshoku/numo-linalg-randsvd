@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'numo/narray'
+require 'numo/random'
 
 # Ruby/Numo (NUmerical MOdules)
 module Numo
@@ -15,24 +16,25 @@ module Numo
     # @param t [Integer] The number of iterations for orthogonalization.
     # @param driver [String] The driver parameter of Numo::Linalg.svd.
     # @param job [String] The job parameter of Numo::Linalg.svd.
-    def randsvd(a, k, t = 0, driver: 'svd', job: 'A')
+    # @param seed [Integer] The seed of random number generator.
+    def randsvd(a, k, t = 0, driver: 'svd', job: 'A', seed: nil)
       n = a.shape[1]
-      q = _orthonormal_mat(a, [k + 10, n].min, t)
+      q = _orthonormal_mat(a, [k + 10, n].min, t, seed)
       b = a.dot(q)
       s, u, vt = Numo::Linalg.svd(b, driver: driver, job: job)
       vtqt = vt.dot(q.transpose)
       _truncated_mat(s, u, vtqt, k)
     end
 
-    def _rand_normal(shape, dtype = Numo::DFloat, mu = 0.0, sigma = 1.0)
-      a = dtype.new(shape).rand
-      b = dtype.new(shape).rand
-      ((Numo::NMath.sqrt(Numo::NMath.log(a) * -2.0) * Numo::NMath.sin(b * 2.0 * Math::PI)) * sigma) + mu
+    def _rand_normal(shape, dtype = Numo::DFloat, seed = nil, mu = 0.0, sigma = 1.0)
+      Numo::Random::Generator.new(seed: seed).normal(
+        shape: shape, dtype: dtype.name.split('::')[-1].downcase.to_sym, loc: mu, scale: sigma
+      )
     end
 
-    def _orthonormal_mat(a, l, t)
+    def _orthonormal_mat(a, l, t, seed)
       m = a.shape[0]
-      r = _rand_normal([m, l], a.class)
+      r = _rand_normal([m, l], a.class, seed)
       q, = Numo::Linalg.qr(a.transpose.dot(r), mode: 'economic')
       t.times do
         r, = Numo::Linalg.qr(a.dot(q), mode: 'economic')
