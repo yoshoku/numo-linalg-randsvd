@@ -1,3 +1,7 @@
+## [0.2.1] - 2022-11-2022
+
+- Fix dependent version of numo-random.
+
 ## [0.2.0] - 2022-11-12
 
 **Breaking Changes**
