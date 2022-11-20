@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'numo-linalg', '>= 0.1.4'
   spec.add_dependency 'numo-narray', '>= 0.9.1'
-  spec.add_dependency 'numo-random', '~> 0.4.0'
+  spec.add_dependency 'numo-random', '~> 0.4'
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
