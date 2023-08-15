@@ -33,10 +33,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'numo-linalg', '>= 0.1.4'
   spec.add_dependency 'numo-narray', '>= 0.9.1'
   spec.add_dependency 'numo-random', '~> 0.4'
 
-  # For more information and examples about making a new gem, checkout our
-  # guide at: https://bundler.io/guides/creating_gem.html
+  spec.add_development_dependency 'numo-linalg'
 end

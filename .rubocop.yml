@@ -12,6 +12,10 @@ AllCops:
     - 'vendor/**/*'
     - 'Steepfile'
 
+Gemspec/DevelopmentDependencies:
+  AllowedGems:
+    - numo-linalg
+
 Gemspec/RequiredRubyVersion:
   Enabled: false
 
