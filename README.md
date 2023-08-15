@@ -15,6 +15,17 @@ References:
 - P.-G. Martinsson, V. Rokhlin, M. Tygert, "A randomized algorithm for the approximation of matrices," Tech. Rep., 1361, Yale University Department of Computer Science, 2006.
 
 ## Installation
+This gem requires Numo::Linalg, so install numo-linalg or numo-tiny_linalg:
+
+```sh
+$ gem install numo-linalg
+```
+
+Or:
+
+```sh
+$ gem install numo-tiny_linalg
+```
 
 Add this line to your application's Gemfile:
 
@@ -34,6 +45,10 @@ Or install it yourself as:
 
 ```ruby
 require 'numo/linalg/autoloader'
+# # Or
+# require 'numo/tiny_linalg'
+# Numo::Linalg = Numo::TinyLinalg
+
 require 'numo/linalg/randsvd'
 
 # An example of matrix decomposition is as follows:
