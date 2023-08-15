@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'numo-random', '~> 0.4'
 
   spec.add_development_dependency 'numo-linalg'
+  spec.add_development_dependency 'numo-tiny_linalg'
 end

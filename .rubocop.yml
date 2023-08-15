@@ -15,6 +15,7 @@ AllCops:
 Gemspec/DevelopmentDependencies:
   AllowedGems:
     - numo-linalg
+    - numo-tiny_linalg
 
 Gemspec/RequiredRubyVersion:
   Enabled: false
