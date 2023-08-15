@@ -1,4 +1,9 @@
-## [0.2.1] - 2022-11-2022
+## [0.3.0] - 2023-08-15
+**Breaking Changes**
+
+- Remove numo-linalg from runtime dependencies so that users can also choose to use Numo::TinyLinalg.
+
+## [0.2.1] - 2022-11-20
 
 - Fix dependent version of numo-random.
 
