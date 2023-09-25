@@ -52,6 +52,9 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Max: 5
 
+RSpec/SpecFilePathFormat:
+  Enabled: false
+
 Security/MarshalLoad:
   Exclude:
     - 'spec/**/*'
