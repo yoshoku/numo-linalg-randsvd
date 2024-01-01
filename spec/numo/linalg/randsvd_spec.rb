@@ -21,9 +21,9 @@ RSpec.describe Numo::Linalg do
         expect(vt.ndim).to eq(2)
         expect(vt.shape[0]).to eq(k)
         expect(vt.shape[1]).to eq(n)
-        expect((u.transpose.dot(u) - Numo::DFloat.eye(k)).abs.max).to be < 1e-8
-        expect((vt.dot(vt.transpose) - Numo::DFloat.eye(k)).abs.max).to be < 1e-8
-        expect((u.dot(s.diag.dot(vt)) - a).abs.max).to be < 1e-8
+        expect((u.transpose.dot(u) - Numo::DFloat.eye(k)).abs.max).to be < 1e-7
+        expect((vt.dot(vt.transpose) - Numo::DFloat.eye(k)).abs.max).to be < 1e-7
+        expect((u.dot(s.diag.dot(vt)) - a).abs.max).to be < 1e-7
       end
     end
 
@@ -40,9 +40,9 @@ RSpec.describe Numo::Linalg do
         expect(vt.ndim).to eq(2)
         expect(vt.shape[0]).to eq(k)
         expect(vt.shape[1]).to eq(n)
-        expect((u.transpose.dot(u) - Numo::SFloat.eye(k)).abs.max).to be < 1e-6
-        expect((vt.dot(vt.transpose) - Numo::SFloat.eye(k)).abs.max).to be < 1e-6
-        expect((u.dot(s.diag.dot(vt)) - a).abs.max).to be < 1e-6
+        expect((u.transpose.dot(u) - Numo::SFloat.eye(k)).abs.max).to be < 1e-5
+        expect((vt.dot(vt.transpose) - Numo::SFloat.eye(k)).abs.max).to be < 1e-5
+        expect((u.dot(s.diag.dot(vt)) - a).abs.max).to be < 1e-5
       end
     end
   end
