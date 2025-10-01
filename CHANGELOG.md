@@ -1,3 +1,9 @@
+## [0.4.0] - 2025-10-02
+**Breaking Changes**
+
+- Change dependency from numo-narray to [numo-narray-alt](https://github.com/yoshoku/numo-narray-alt).
+- Add [numo-linalg-alt](https://github.com/yoshoku/numo-linalg-alt) to runtime dependencies.
+
 ## [0.3.0] - 2023-08-15
 **Breaking Changes**
 

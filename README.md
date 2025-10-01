@@ -3,11 +3,13 @@
 [![Build Status](https://github.com/yoshoku/numo-linalg-randsvd/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/yoshoku/numo-linalg-randsvd/actions/workflows/main.yml)
 [![Gem Version](https://badge.fury.io/rb/numo-linalg-randsvd.svg)](https://badge.fury.io/rb/numo-linalg-randsvd)
 [![BSD 3-Clause License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://github.com/yoshoku/numo-linalg-randsvd/blob/main/LICENSE.txt)
-[![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://yoshoku.github.io/numo-linalg-randsvd/doc/)
+[![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://gemdocs.org/gems/numo-linalg-randsvd/)
 
 Numo::Linalg.randsvd is a module function on Numo::Linalg for truncated singular value decomposition with randomized algorithm.
 This gem re-implements [RandSVD](https://github.com/yoshoku/randsvd) using [Numo::NArray](https://github.com/ruby-numo/numo-narray) and
 [Numo::Linalg](https://github.com/ruby-numo/numo-linalg) instead of [NMatrix](https://github.com/SciRuby/nmatrix).
+
+Note: Since v0.4.0, this gem uses [Numo::NArray Alternative](https://github.com/yoshoku/numo-narray-alt) instead of Numo::NArray as a dependency.
 
 References:
 
@@ -15,17 +17,6 @@ References:
 - P.-G. Martinsson, V. Rokhlin, M. Tygert, "A randomized algorithm for the approximation of matrices," Tech. Rep., 1361, Yale University Department of Computer Science, 2006.
 
 ## Installation
-This gem requires Numo::Linalg, so install numo-linalg or numo-tiny_linalg:
-
-```sh
-$ gem install numo-linalg
-```
-
-Or:
-
-```sh
-$ gem install numo-tiny_linalg
-```
 
 Add this line to your application's Gemfile:
 
@@ -44,11 +35,6 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-require 'numo/linalg/autoloader'
-# # Or
-# require 'numo/tiny_linalg'
-# Numo::Linalg = Numo::TinyLinalg
-
 require 'numo/linalg/randsvd'
 
 # An example of matrix decomposition is as follows:
