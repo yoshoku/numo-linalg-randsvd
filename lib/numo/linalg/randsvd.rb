@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'numo/narray'
+require 'numo/linalg'
 require 'numo/random'
 
 # Ruby/Numo (NUmerical MOdules)
