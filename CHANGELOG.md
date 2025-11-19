@@ -1,3 +1,10 @@
+## [0.4.1] - 2025-11-19
+
+- Set the required version of numo-narray-alt to 0.9.10 or higher.
+- Set the required version of numo-linalg-alt to 0.7.1 or higher.
+- Set the required version of numo-random to 0.6.2 or higher.
+- Change require statement to explicitly load numo/narray/alt.
+
 ## [0.4.0] - 2025-10-02
 **Breaking Changes**
 

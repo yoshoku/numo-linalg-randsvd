@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = 'numo-linalg-randsvd'
-  spec.version = '0.4.0'
+  spec.version = '0.4.1'
   spec.authors = ['yoshoku']
   spec.email = ['yoshoku@outlook.com']
 
