@@ -34,6 +34,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'numo-linalg-alt', '~> 0.2.0'
-  spec.add_dependency 'numo-narray-alt', '~> 0.9.3'
+  spec.add_dependency 'numo-narray-alt', '~> 0.9.10'
   spec.add_dependency 'numo-random', '~> 0.6.0'
 end
