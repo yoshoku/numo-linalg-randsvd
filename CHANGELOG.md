@@ -1,3 +1,9 @@
+## [0.5.0] - 2026-02-06
+
+- relax numo-narray-alt version constraint to >= 0.9.10, < 0.11.0.
+- relax numo-linalg-alt version constraint to >= 0.7.1, < 1.0.0.
+- relax numo-random version constraint to >= 0.6.2, < 1.0.0.
+
 ## [0.4.1] - 2025-11-19
 
 - Set the required version of numo-narray-alt to 0.9.10 or higher.
