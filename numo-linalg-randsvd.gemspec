@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'numo-linalg-alt', '~> 0.7.1'
+  spec.add_dependency 'numo-linalg-alt', '>= 0.7.1', '< 1.0.0'
   spec.add_dependency 'numo-narray-alt', '>= 0.9.10', '< 0.11.0'
   spec.add_dependency 'numo-random', '~> 0.6.2'
 end
