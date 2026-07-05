@@ -1,3 +1,7 @@
+## [0.6.0] - 2026-02-06
+
+- relax numo-narray-alt upper bound to < 0.12.0.
+
 ## [0.5.0] - 2026-02-06
 
 - relax numo-narray-alt version constraint to >= 0.9.10, < 0.11.0.
